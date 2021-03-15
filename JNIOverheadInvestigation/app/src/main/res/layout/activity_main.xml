@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/suitLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/buttonWarmup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Profile - Warmup(10 calls)" />
+
+        <TextView
+            android:id="@+id/tvWarmup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Warmup(10 calls) avg time in ms" />
+
+        <Button
+            android:id="@+id/buttonNop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Profile - NOP(1000 calls)" />
+
+        <TextView
+            android:id="@+id/tvNop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Nop jni(1000 calls) avg time in ms" />
+
+        <Button
+            android:id="@+id/buttonSomeCalculations"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Profile - Some Calculations(1000 calls)" />
+
+        <TextView
+            android:id="@+id/tvSomeCalculations"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Some Calculations(1000 calls) avg time in ms" />
+
+        <Button
+            android:id="@+id/buttonSuit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Profile - All of the above cases" />
+
+        <TextView
+            android:id="@+id/tvSuit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="false"
+            android:layout_weight="1"
+            android:text="Whole suit result" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
